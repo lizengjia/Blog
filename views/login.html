@@ -1,4 +1,4 @@
-{% extends "layouts.html" %}
+{% extends "layout.html" %}
 {% block title %}登录{% endblock %}
 {% block body %}
 <div class="login-box">
@@ -19,17 +19,16 @@
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
-                <div class="col-xs-8">
-                    <div class="checkbox icheck">
-                        <label>
-                            <div class="col-xs-4">
-                                <button type="button" id="find" class="btn btn-primary btn-block btn-flat">find</button>
-                            </div>       </label>
-                    </div>
+                <div class="col-xs-4">
+
+
+                                <a type="button" href="/register" class="btn btn-primary btn-block btn-flat">注册</a>
+
+
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="button" id="login" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button type="button" id="login" class="btn btn-primary btn-block btn-flat">登录</button>
                 </div>
 
                 <!-- /.col -->
