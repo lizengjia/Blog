@@ -46,13 +46,15 @@ app.use(cookieParser());
 
 //会话中间件，存放在mongodb中
 app.use(session({
+    resave: true,
     secret:"123",
+    saveUninitialized: true,
     store:new MongoStore({
        url:'mongodb://localhost/hello'
     })
 }));
 app.use('/', express.static(path.join(__dirname, 'public')));
-
+var a = 11;
 app.get('/', function (req, res, next) {
     // res.render('login.html', {title: 'Express'});
     res.render('login.html', {title: 'Express'});
